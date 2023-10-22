@@ -5,7 +5,6 @@ plugins {
 }
 
 apply plugin: MyPlugin
-//apply plugin: ClassPlugin
 
 class MyPlugin implements Plugin<Project> {
     @Override
@@ -67,5 +66,15 @@ dependencies {
 
 
     implementation fileTree(dir: 'libs', include: ['pangrowth-dpsdk-4.9.0.2.aar'])
+
+//    implementation('com.pangle.cn:pangrowth-sdk:3.9.0.2') {
+//        exclude group: 'com.pangle.cn', module: 'partner-live-sdk'
+//        exclude group: 'com.pangle.cn', module: 'pangrowth-novel-sdk'
+//        exclude group: 'com.pangle.cn', module: 'pangrowth-game-sdk'
+//        exclude group: 'com.pangle.cn', module: 'pangrowth-luckycat-sdk'
+//        exclude group: 'com.pangle.cn', module: 'pangrowth-reward-sdk'
+//        exclude group: 'com.pangle.cn', module: 'partner-luckycat-api-sdk'
+//        exclude group: 'com.pangle.cn', module: 'pangrowth-luckycat-api'
+//    }
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
 }
