@@ -1,0 +1,19 @@
+plugins {
+    id 'java-library'
+    id 'maven-publish'
+}
+
+dependencies {
+    implementation gradleApi()
+}
+
+publishing {
+    publications {
+        playletPlugin(MavenPublication) {
+            groupId "com.ichatmaster.playlet"
+            artifactId "PlayletPlugin"
+            version "1.0.0"
+            from components.java
+        }
+    }
+}
