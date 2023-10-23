@@ -11,10 +11,10 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
 
-public class DPDrawSeekLayout1 extends FrameLayout {
+public class DPDrawSeekLayout extends FrameLayout {
 
 
-    public DPDrawSeekLayout1(@NonNull Context var1) {
+    public DPDrawSeekLayout(@NonNull Context var1) {
         super(var1);
     }
 
@@ -22,11 +22,11 @@ public class DPDrawSeekLayout1 extends FrameLayout {
 
     }
 
-    public DPDrawSeekLayout1(@NonNull Context var1, @Nullable AttributeSet var2) {
+    public DPDrawSeekLayout(@NonNull Context var1, @Nullable AttributeSet var2) {
         super(var1, var2);
     }
 
-    public DPDrawSeekLayout1(@NonNull Context var1, @Nullable AttributeSet var2, int var3) {
+    public DPDrawSeekLayout(@NonNull Context var1, @Nullable AttributeSet var2, int var3) {
         super(var1, var2, var3);
         Log.e("swallow", "DPDrawSeekLayout in project");
     }
