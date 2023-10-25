@@ -20,13 +20,31 @@ dependencies {
     implementation 'org.apache.commons:commons-io:1.3.2'
 }
 
+gradlePlugin {
+    plugins {
+        skit {
+            id = "com.ichatmaster"
+            implementationClass = "com.ichatmaster.playlet.PlayLetPlugin"
+        }
+    }
+}
+
 publishing {
     publications {
-        playletPlugin(MavenPublication) {
-            groupId "com.ichatmaster.playlet"
+        skit(MavenPublication) {
+            groupId "com.ichatmaster"
             artifactId "PlayletPlugin"
             version "1.0.0"
             from components.java
+        }
+    }
+
+
+    repositories {
+        maven {
+            // 私服的服务地址
+            url "$rootDir/repo"
+            version "1.0.0"
         }
     }
 }

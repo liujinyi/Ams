@@ -1,7 +1,8 @@
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
-    id 'playlet'
+    // 自定义gradle plugin 里定义的id
+    id 'com.ichatmaster'
 }
 
 apply plugin: MyPlugin

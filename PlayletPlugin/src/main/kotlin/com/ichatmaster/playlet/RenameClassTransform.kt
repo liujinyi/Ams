@@ -5,7 +5,6 @@ import com.android.build.api.instrumentation.ClassContext
 import com.android.build.api.instrumentation.ClassData
 import com.android.build.api.instrumentation.InstrumentationParameters
 import org.objectweb.asm.ClassVisitor
-import java.io.File
 
 abstract class RenameClassTransform : AsmClassVisitorFactory<InstrumentationParameters.None> {
     override fun createClassVisitor(

@@ -1,0 +1,137 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.ichatmaster",
+    "module": "PlayletPlugin",
+    "version": "1.0.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "7.5"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.jvm.version": 17,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-jdk8",
+          "version": {
+            "requires": "1.7.20"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "PlayletPlugin-1.0.0.jar",
+          "url": "PlayletPlugin-1.0.0.jar",
+          "size": 10551,
+          "sha512": "4a56b1d3dd5175a4642c7f54e77cf3c1653d3518104c64a9fa181b2d33703deab18e142784f3aeee5288ab1313f9aee5e99bc7600783bbeece063533a0c76b24",
+          "sha256": "0381080a832b84a5c0f24f7089bcd6398fe0c4aa4149c7f696f5da93505672d6",
+          "sha1": "9668761464fe017d8789f4c265f181b7c36172a6",
+          "md5": "70d6f6cad3b7bafbc3c25126ee0ff436"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.jvm.version": 17,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.ow2.asm",
+          "module": "asm",
+          "version": {
+            "requires": "9.2"
+          }
+        },
+        {
+          "group": "org.ow2.asm",
+          "module": "asm-util",
+          "version": {
+            "requires": "9.2"
+          }
+        },
+        {
+          "group": "org.ow2.asm",
+          "module": "asm-commons",
+          "version": {
+            "requires": "9.2"
+          }
+        },
+        {
+          "group": "org.ow2.asm",
+          "module": "asm-analysis",
+          "version": {
+            "requires": "9.2"
+          }
+        },
+        {
+          "group": "org.ow2.asm",
+          "module": "asm-tree",
+          "version": {
+            "requires": "9.2"
+          }
+        },
+        {
+          "group": "com.android.tools.build",
+          "module": "gradle",
+          "version": {
+            "requires": "7.4.2"
+          },
+          "excludes": [
+            {
+              "group": "org.ow2.asm",
+              "module": "*"
+            }
+          ]
+        },
+        {
+          "group": "org.apache.commons",
+          "module": "commons-io",
+          "version": {
+            "requires": "1.3.2"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-jdk8",
+          "version": {
+            "requires": "1.7.20"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "PlayletPlugin-1.0.0.jar",
+          "url": "PlayletPlugin-1.0.0.jar",
+          "size": 10551,
+          "sha512": "4a56b1d3dd5175a4642c7f54e77cf3c1653d3518104c64a9fa181b2d33703deab18e142784f3aeee5288ab1313f9aee5e99bc7600783bbeece063533a0c76b24",
+          "sha256": "0381080a832b84a5c0f24f7089bcd6398fe0c4aa4149c7f696f5da93505672d6",
+          "sha1": "9668761464fe017d8789f4c265f181b7c36172a6",
+          "md5": "70d6f6cad3b7bafbc3c25126ee0ff436"
+        }
+      ]
+    }
+  ]
+}
